@@ -7,11 +7,11 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: target/get-weapons-fx-1.0-SNAPSHOT.jar
-      Handler: com.revature.get_books.GetWeaponsHandler
+      Handler: com.revature.get_weapons.GetWeaponsHandler
       Runtime: java8.al2
       Description: Java function
       MemorySize: 256
       Timeout: 30
       Tracing: Active
       Policies:
-        - arn:aws:iam::638686461389:policy/get-weapons-policy
+      - arn:aws:iam::638686461389:policy/get-weapons-policy
